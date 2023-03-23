@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" placeholder="0" id="result">
+            <p id="memory"></p>
+        </div>
+        <div class="row">
+            <button type="button" class="btn deg-fix" onclick="deg()">DEG</button>
+            <button type="button" class="btn deg-fix" onclick="fe()">F-E</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn memory"  id="memoryClear" disabled onclick="mc()">MC</button>
+            <button type="button" class="btn memory"  id="memoryRecall"  disabled onclick="mr()">MR</button>
+            <button type="button" class="btn memory"  onclick="mPlus()">M+</button>
+            <button type="button" class="btn memory"  onclick="mMinus()">M-</button>
+            <button type="button" class="btn memory" onclick="ms()">MS</button>
+        </div>
+
+        <div class="row">
+            <img src="./images/right-angled-triangle.svg" width="20px" height="20px" class="trigo-img">
+            <select name="functions" id="trigo" class="trigonometry" onchange="trigonometry()">
+                <option value="Trigonometry" selected disabled>Trigonometry</option>
+                <option value="sinx">Sinx</option>
+                <option value="cosx">cosx</option>
+                <option value="tanx">tanx</option>
+            </select>
+
+            <select name="functions"  class="function" onchange="functions()"id="functions" >
+                <option value="Functions" selected disabled>&#x192;&nbsp;Function</option>
+                <option value="floor">floor(x)</option>
+                <option value="ceil">ceil(x)</option>
+            </select>
+
+        </div>
+
+        <div class="row">
+            <button type="button" class="btn" onclick="twoToN()">2<sup>n</sup></button>
+            <button type="button" class="btn" onclick="pi()">&pi;</button>
+            <button type="button" class="btn" onclick="e()">e</button>
+            <button type="button" class="btn" onclick="del()">C</button>
+            <button type="button" class="btn" onclick="remove()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn" onclick="square()" >x<sup>2</sup></button>
+            <button type="button" class="btn" onclick="inverse()">1/x</button>
+            <button type="button" class="btn" onclick="abs()">|x|</button>
+            <button type="button" class="btn" onclick="exp()">exp</button>
+            <button type="button" class="btn" onclick="dis('%')">mod</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn" onclick="squareRoot()">2&Sqrt;x</button>
+            <button type="button" class="btn" onclick="dis('&#40')">(</button>
+            <button type="button" class="btn" onclick="dis('&#41')">)</button>
+            <button type="button" class="btn" onclick="factorial()">n!</button>
+            <button type="button" class="btn operator" onclick="dis('/')">&divide;</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn" onclick="dis('**')" >x<sup>y</sup></button>
+            <button type="button" class="btn white" onclick="dis(7)">7</button>
+            <button type="button" class="btn white" onclick="dis('8')">8</button>
+            <button type="button" class="btn white" onclick="dis('9')">9</button>
+            <button type="button" class="btn operator" onclick="dis('*')">&times;</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn" onclick="power()">10<sup>x</sup></button>
+            <button type="button" class="btn white" onclick="dis('4')" >4</button>
+            <button type="button" class="btn white" onclick="dis('5')">5</button>
+            <button type="button" class="btn white" onclick="dis('6')">6</button>
+            <button type="button" class="btn operator" onclick="dis('-')">&#9472;</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn" onclick="log()">log</button>
+            <button type="button" class="btn white" onclick="dis('1')">1</button>
+            <button type="button" class="btn white" onclick="dis('2')">2</button>
+            <button type="button" class="btn white" onclick="dis('3')">3</button>
+            <button type="button" class="btn operator" onclick="dis('+')">+</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn" onclick="ln()">ln</button>
+            <button type="button" class="btn white" onclick="plusMinus()">+/-</button>
+            <button type="button" class="btn white" onclick="dis('0')">0</button>
+            <button type="button" class="btn white" onclick="dis('.')">.</button>
+            <button type="button" class="btn operator" onclick="sresult()" style="background-color: lightskyblue;">=</button>
+        </div>
+
+
+
+    </div>
+
+    <script src="./js/typescript.js"></script>
+</body>
+
+</html>

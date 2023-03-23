@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.display input {
+
+    border: 0 none;
+    background-color: #f3f3f3;
+    width: 350px;
+    text-align: right;
+    font-size: 36px;
+    padding-right: 7px;
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 10%;
+    background-color: #f3f3f3;
+    width: 350px;
+    ;
+
+}
+
+.row {
+
+    display: flex;
+    justify-content: start;
+    margin-left: 5px;
+
+
+}
+
+.trigo-img {
+    margin-top: 8px;
+    padding-left: 2px;
+
+}
+
+.btn {
+    padding: 8px 10px 8px 10px;
+    border: 0 none;
+    width: 70px;
+    background-color: #f8f8f8;
+    margin: 1px;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+}
+
+
+.white {
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.operator {
+    font-size: 20px;
+}
+
+
+.equal {
+    background-color: lightskyblue;
+}
+
+.memory {
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.deg-fix {
+    background-color: #f3f3f3;
+    font-weight: bold;
+
+
+}
+
+.trigonometry {
+    border: 0 none;
+    padding: 10px 10px 10px 5px;
+    background-color: #f3f3f3;
+}
+
+.function {
+    border: 0 none;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
